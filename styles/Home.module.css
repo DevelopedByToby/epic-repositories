@@ -1,116 +1,153 @@
-.container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  position: absolute;
+  top: 15%;
+  font-size: 9vh !important;
+  left: 7%;
+  color: rgb(0, 0, 0);
+  font-size: 10vh;
+  z-index: 5;
+  font-weight: bold;
+  text-align: left
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.signup{
+position: fixed;
+top: 47.4%; 
+left: 34%;
+background-color: rgba(255, 243, 232, 0.42);
+height: 4vh !important;
+width: 12vh !important;
+z-index: 5;
+border-radius: 0.7vh;
+border: 0px solid;
+cursor: pointer;
+color: rgba(0, 0, 0, 0.49);
+font-size: 1.7vh;
+padding: 0.5vh
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media only screen and (max-width: 700px) {
+.signup {
+  position: absolute;
+  top: 43%;
+  left: 35%;
   }
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    position: absolute;
+    top: 12%;
+    font-size: 5vh !important;
+    text-align: left;
+    left: 5%;
+    }
+  }
+
+.eclipse{
+position: absolute;
+width: 80vh;
+height: 65vh;
+left: 28%;
+top: 20%;
+background: linear-gradient(180deg, #FF7BCA 0%, #FFC56F 100%);
+filter: blur(7vh);
+border-radius: 75%;
+z-index: 1;
+}
+
+@media only screen and (max-width: 700px) {
+  .eclipse {
+    position: absolute;
+    top: 15%;
+    left: -1%;
+    height: 60vh;
+    width: 57vh;
+    }
+  }
+
+.eclipse2{
+position: absolute;
+width: 20vh;
+height: 17vh;
+left: 30%;
+top: 16%;
+background: linear-gradient(180deg, #F22FB0 0%, #FFC56F 100%, #7061A3 100%);
+filter: blur(5vh);
+border-radius: 50%;
+z-index: 2
+}
+
+@media only screen and (max-width: 700px) {
+  .eclipse2 {
+    position: absolute;
+    top: 16%;
+    left: 5%;
+    height: 20vh;
+    width: 20vh;
+    }
+  }
+
+.email{
+  position: absolute;
+  top: 47%;
+  left: 7%;
+  height: 2vh;
+  width: 65vh;
+  border-radius: 1vh;
+  border: none;
+  background-color: rgba( 255, 255, 255, 0.25 );
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: left;
+  padding: 1.5vh;
+  font-size: 1.8vh;
+  z-index: 2;
+  color: rgba(0, 0, 0, 0.49);
+}
+
+@media only screen and (max-width: 700px) {
+  .email{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    height: 2vh;
+    width: 40vh;
+    border-radius: 5px;
+    padding: 1.5vh;
+    font-size: 1.8vh;
+    z-index: 2;
+  }
+}
+
+.credits{
+position: absolute;
+top: 95%;
+left: 42%;
+z-index: 1;
+size: 0.7vh;
+color: rgba(99, 99, 99, 0.61) !important;
+font-weight: normal !important;
+font-size: 2vh;
+}
+
+.creditsRef{
+color: rgba(99, 99, 99, 0.61) !important;
+font-weight: normal !important;
+}
+
+.texture{
+z-index: 3;
+height: 5vh;
+width: 5vh;
+opacity: 0.4
+}
+
+@media only screen and (max-width: 700px) {
+.credits{
+  position: absolute;
+  top: 95%;
+  left: 20%;
+  size: 0.7vh;
+}
 }

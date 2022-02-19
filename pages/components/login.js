@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import { supabase } from '../utils/supabaseClient'
-import styles from '../styles/Home.module.css'
+/*import { useState } from 'react'
+import { supabase } from '../../utils/supabaseClient'
 
 export default function Auth() {
   const [loading, setLoading] = useState(false)
@@ -22,7 +21,7 @@ export default function Auth() {
   return (
     <div className="row flex flex-center">
       <div className="col-6 form-widget">
-        <h1 className={styles.title}>Positive start</h1>
+        <h1 className="header">Positive start</h1>
         <div>
           <input
             className="inputField"
@@ -45,10 +44,6 @@ export default function Auth() {
           </button>
         </div>
       </div>
-
-      <div className={styles.eclipse}></div>
-      <div className={styles.eclipse2}></div>
-
     </div>
   )
-}
+} */
