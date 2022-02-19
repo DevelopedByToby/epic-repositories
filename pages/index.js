@@ -22,7 +22,7 @@ export default function Auth() {
   return (
     <div className="row flex flex-center">
       <div className="col-6 form-widget">
-        <h1 className={styles.title}>Positive start</h1>
+        <h1 className={styles.title}>Epic repositories!</h1>
         <div>
           <input
             className="inputField"
