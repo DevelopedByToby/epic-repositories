@@ -20,6 +20,7 @@ export default function Auth() {
   }
 
   return (
+    <div className={styles.container}>
     <div className="row flex flex-center">
       <div className="col-6 form-widget">
         <h1 className={styles.title}>Epic repositories</h1>
@@ -49,5 +50,6 @@ export default function Auth() {
       <div className={styles.eclipse}></div>
 
     </div>
+  </div>
   )
 }
