@@ -47,7 +47,6 @@ export default function Auth() {
       </div>
 
       <div className={styles.eclipse}></div>
-      <div className={styles.eclipse2}></div>
 
     </div>
   )
