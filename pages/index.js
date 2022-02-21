@@ -11,7 +11,7 @@ export default function Auth() {
       setLoading(true)
       const { error } = await supabase.auth.signIn({ email })
       if (error) throw error
-      alert('Check your email for the login link!')
+      emailSuccess()
     } catch (error) {
       alert(error.error_description || error.message)
     } finally {
@@ -26,7 +26,7 @@ export default function Auth() {
         <h1 className={styles.title}>Epic repositories</h1>
         <div>
           <input
-            className="inputField"
+            className={styles.inputField}
             type="email"
             placeholder="Your email"
             value={email}
@@ -52,4 +52,9 @@ export default function Auth() {
     </div>
   </div>
   )
+}
+
+function emailSuccess() {
+  console.log('Email send was a success')
+  alert('Check your email for the login link!')
 }
