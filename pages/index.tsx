@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { supabase } from '../utils/supabaseClient'
 import styles from '../styles/Home.module.css'
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Auth() {
   const [loading, setLoading] = useState(false)
@@ -42,19 +43,18 @@ export default function Auth() {
             className="button block"
             disabled={loading}
           >
-            <span>{loading ? 'Loading' : 'Try it out'}</span>
+            <span>{loading ? 'Loading' : 'Try it out →'}</span>
           </button>
         </div>
       </div>
 
       <div className={styles.eclipse}></div>
-
+      <Toaster position="top-right"/>
     </div>
   </div>
   )
 }
 
 function emailSuccess() {
-  console.log('Email send was a success')
-  alert('Check your email for the login link!')
+  toast.success('Check your email for the sign in link!')
 }
